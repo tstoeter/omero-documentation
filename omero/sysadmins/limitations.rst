@@ -62,6 +62,7 @@ The OMERO pyramid generation process should be considered as deprecated and inst
 that users avoid these issues by converting
 their data to `pyramidal OME-TIFF <https://www.openmicroscopy.org/2018/11/29/ometiffpyramid.html>`_
 files before importing into OMERO. A number of suitable tools are available such as
+`NGFF-Converter <https://www.glencoesoftware.com/products/ngff-converter/>`_,
 `bioformats2raw & raw2ometiff <https://www.glencoesoftware.com/blog/2019/12/09/converting-whole-slide-images-to-OME-TIFF.html>`_,
 `bfconvert <https://docs.openmicroscopy.org/latest/bio-formats/users/comlinetools/conversion.html>`_,
 `Kheops <https://github.com/BIOP/ijp-kheops>`_, `tifffile <https://pypi.org/project/tifffile/>`_,
