@@ -54,9 +54,9 @@ an existing component, or just looking for more background information, there
 is a section about the server within the :doc:`/developers/index`;
 the best starting point is the :doc:`/developers/Server` for developers.
 
-******************
-Background reading
-******************
+**************************
+Requirements & limitations
+**************************
 
 .. toctree::
     :maxdepth: 1
