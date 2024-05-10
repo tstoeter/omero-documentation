@@ -1230,7 +1230,7 @@ import. Note that if this value is less than min_threads,
 min_threads will limit the number of background
 tasks which can run simultaneously.
 
-Default: `10`
+Default: `5`
 
 .. property:: omero.threads.background_timeout
 
@@ -1279,7 +1279,7 @@ priority level. Internal system threads may still run.
 Note when setting this that these threads do not
 time out.
 
-Default: `5`
+Default: `10`
 
 .. property:: omero.throttling.method_time.error
 
@@ -2043,6 +2043,20 @@ omero.security.filter.bitand
 
 Default: `(int8and(permissions,
 %s) = %s)`
+
+.. property:: omero.security.ignore_case
+
+omero.security.ignore_case
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Whether to ignore the case of the username during login (`true` or
+`false`). Default: `false` (JSmith and jsmith will be considered two
+different users).
+.. warning::
+   Before enabling this feature, lower the case of all usernames in OMERO
+   (`omename` column in the `experimenter` table). It is the system
+   administrator's responsibility to handle any username clashes.
+
+Default: `false`
 
 .. property:: omero.security.keyStore
 
