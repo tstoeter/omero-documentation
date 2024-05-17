@@ -13,9 +13,10 @@ Initial setup
 Sphinx
 ------
 
-The Sphinx documentation system can be obtained by issuing::
+The Sphinx documentation system and the readthedocs theme can be obtained by issuing::
 
     pip install Sphinx
+    pip install sphinx-rtd-theme
 
 Most Linux distributions will also provide it in a python-sphinx package
 (or similar).
