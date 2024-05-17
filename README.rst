@@ -15,8 +15,7 @@ Sphinx
 
 The Sphinx documentation system and the readthedocs theme can be obtained by issuing::
 
-    pip install Sphinx
-    pip install sphinx-rtd-theme
+    pip install -r requirements.txt
 
 Most Linux distributions will also provide it in a python-sphinx package
 (or similar).
