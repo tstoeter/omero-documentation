@@ -2051,6 +2051,7 @@ omero.security.ignore_case
 Whether to ignore the case of the username during login (`true` or
 `false`). Default: `false` (JSmith and jsmith will be considered two
 different users).
+
 .. warning::
 
    Before enabling this feature, lower the case of all usernames in OMERO
