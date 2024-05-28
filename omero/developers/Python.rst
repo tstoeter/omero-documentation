@@ -33,6 +33,12 @@ Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/blog/2
       - `zeroc-ice-py-macos-universal2 <https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases/tag/20240131>`_
 
 
+.. note:: 
+   When installing the binaries, if an error like ``zeroc_ice-3.6.5-cp311-cp311-macosx_11_0_universal2.whl is not a supported wheel on this  platform`` occurs, this is probably due to the fact that your Python environment is not compatible with the platform
+   compatibility tags of the pre-built wheel. In that case, we recommend to install the Ice-Python bindings using the binaries from the ``conda-forge`` channel, see example
+   below.
+
+
 For example, to install ``omero-py`` using ``pip`` in a virtual environment created with Python 3.11 on Ubuntu 22.04:
 
 .. parsed-literal::
