@@ -6,10 +6,10 @@ libraries.
 
 From OMERO 5.6.0 release, the client library ``omero-py`` supports Python 3 and
 is now available on PyPI_ and Conda_. The ``omero-py`` API documentation is available at https://omero-py.readthedocs.io/.
-We recommend you use a Python virtual environment to install the client library. You can create one using either ``venv``, ``conda`` or ``mamba`` .
+We recommend you use a Python virtual environment to install the client library. You can create one using either ``venv``, ``conda`` or ``mamba``.
 Before installing ``omero-py``, we recommend to install the `Zeroc IcePy 3.6 <https://zeroc.com/ice/downloads/3.6>`_ Python bindings.
 
-Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/>`_ has produced several Python wheels to install the Ice-Python bindings depending on the desired Python version and the operating system.
+Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/>`_ has produced several Python wheels to install the Ice-Python bindings depending on the desired Python version and the operating system. Please visit the linked pages to find the full URLs to the wheels that are used in the examples below.
 
 .. list-table::
     :header-rows: 1
@@ -23,7 +23,7 @@ Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/>`_ ha
       - 3.8, 3.9, 3.10, 3.11 and 3.12
       - `zeroc-ice-py-linux-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/tag/20240202>`_
     * - Windows
-      - 3.8, 3.9, 3.10, 3.11 an 3.12
+      - 3.8, 3.9, 3.10, 3.11 and 3.12
       - `zeroc-ice-py-win-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-win-x86_64/releases/tag/20240325>`_
     * - macOS 11.0 or later (``x86_64``)
       - 3.8 and 3.9
@@ -33,7 +33,7 @@ Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/>`_ ha
       - `zeroc-ice-py-macos-universal2 <https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases/tag/20240131>`_
 
 
-For example, to install ``omero-py`` using ``venv`` with Python 3.11 on Ubuntu 22.04:
+For example, to install ``omero-py`` using ``pip`` in a virtual environment created with Python 3.11 on Ubuntu 22.04:
 
 .. parsed-literal::
 
@@ -49,7 +49,7 @@ To install ``omero-py`` using ``conda``. The Ice-Python bindings available from 
     $ conda create -n myenv python=3.9 conda-forge::zeroc-ice==3.6.5 omero-py
     $ conda activate myenv
 
-To install ``omero-py`` using ``conda`` in an environement with Python 3.11 on Ubuntu 22.04:
+To install ``omero-py`` using ``pip`` in a ``conda`` with Python 3.11 on Ubuntu 22.04:
 
 .. parsed-literal::
 
