@@ -25,14 +25,14 @@ Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/>`_ ha
       - 3.8, 3.9, 3.10, 3.11 and 3.12
       - `zeroc-ice-py-linux-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/tag/20240202>`_
     * - Windows
-      - 3.8, 3.9, 3.10 and 3.11
+      - 3.8, 3.9, 3.10, 3.11 an 3.12
       - `zeroc-ice-py-win-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-win-x86_64/releases/tag/20240325>`_
     * - macOS 11.0 or later (``x86_64``)
       - 3.8 and 3.9
       - `zeroc-ice-py-macos-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-macos-x86_64/releases/tag/20231130>`_
-    * - macOS ``universal2``, ``x86_64`` and ``arm64``
+    * - macOS ``x86_64`` and ``arm64``
       - 3.10, 3.11 and 3.12
-      - `zeroc-ice-py-macos-universal2 <https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases>`_
+      - `zeroc-ice-py-macos-universal2 <https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases/tag/20240131>`_
 
 
 For example, to install ``omero-py`` using ``venv`` with Python 3.11 on Ubuntu 22.04:
