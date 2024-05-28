@@ -48,8 +48,17 @@ To install ``omero-py`` using ``conda``. The Ice-Python bindings available from 
 
 .. parsed-literal::
 
-    conda create -n myenv python=3.9 conda-forge::zeroc-ice==3.6.5 omero-py
-    conda activate myenv
+    $ conda create -n myenv python=3.9 conda-forge::zeroc-ice==3.6.5 omero-py
+    $ conda activate myenv
+
+To install ``omero-py`` using ``conda`` in an environement with Python 3.11 on Ubuntu 22.04:
+
+.. parsed-literal::
+
+    $ conda create -n myenv python=3.11
+    $ conda activate myenv
+    $ pip install https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/download/20240202/zeroc_ice-3.6.5-cp311-cp311-manylinux_2_28_x86_64.whl
+    $ pip install omero-py==\ |version_py|
 
 You can then start using the library in the terminal where the environment has been activated:
 
