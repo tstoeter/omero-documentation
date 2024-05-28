@@ -10,7 +10,7 @@ We recommend you use a Python virtual environment to install the client library.
 If you opt for Conda_, you will need
 to install it first, see `miniconda <https://docs.conda.io/en/latest/miniconda.html>`_ for more details.
 
-* If you do not have any pre-existing conda installation, `install Mamba <https://mamba.readthedocs.io/en/latest/installation.html#installation>`_ and use `mambaforge <https://github.com/conda-forge/miniforge#mambaforge>`_. 
+* If you do not have any pre-existing conda installation, `install Mamba <https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html>`_ and use `mambaforge <https://github.com/conda-forge/miniforge#mambaforge>`_. 
 * In case you have a pre-existing conda installation, you can install Mamba by either:
   - Using the recommended way to install Mamba from `mambaforge <https://github.com/conda-forge/miniforge#mambaforge>`_. This will not invalidate your conda installation, but possibly your pre-existing conda environments will be in a different location (e.g. ``/Users/USER_NAME/opt/anaconda3/envs/``) then the new mamba environments (e.g. ``/Users/USER_NAME/mambaforge/envs/``). You can verify this by running ``conda env list``. The addition of ``export CONDA_ENVS_PATH=/Users/user/opt/anaconda3/envs/`` into your ``.bashprofile`` or ``.zprofile`` file will fix this. 
   - Use the `Existing conda install <https://mamba.readthedocs.io/en/latest/installation.html#existing-conda-install>`_ way, i.e. run ``conda install mamba -n base -c conda-forge`` whilst in the base environment. This way can take much longer time than the recommended way described above, and might not lead to a successful installation, especially if run on arm64 (Apple Silicon) OS X.
