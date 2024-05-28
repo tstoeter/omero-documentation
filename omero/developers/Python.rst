@@ -6,23 +6,57 @@ libraries.
 
 From OMERO 5.6.0 release, the client library ``omero-py`` supports Python 3 and
 is now available on PyPI_ and Conda_. The ``omero-py`` API documentation is available at https://omero-py.readthedocs.io/.
-We recommend you use a Python virtual environment to install the client library. You can create one using either ``venv`` or ``conda`` (preferred).
+We recommend you use a Python virtual environment to install the client library. You can create one using either ``venv``, ``conda`` or ``mamba`` (preferred).
 If you opt for Conda_, you will need
 to install it first, see `miniconda <https://docs.conda.io/en/latest/miniconda.html>`_ for more details.
 
-To install ``omero-py`` using venv:
+* If you do not have any pre-existing conda installation, `install Mamba <https://mamba.readthedocs.io/en/latest/installation.html#installation>`_ and use `mambaforge <https://github.com/conda-forge/miniforge#mambaforge>`_. 
+* In case you have a pre-existing conda installation, you can install Mamba by either:
+  - Using the recommended way to install Mamba from `mambaforge <https://github.com/conda-forge/miniforge#mambaforge>`_. This will not invalidate your conda installation, but possibly your pre-existing conda environments will be in a different location (e.g. ``/Users/USER_NAME/opt/anaconda3/envs/``) then the new mamba environments (e.g. ``/Users/USER_NAME/mambaforge/envs/``). You can verify this by running ``conda env list``. The addition of ``export CONDA_ENVS_PATH=/Users/user/opt/anaconda3/envs/`` into your ``.bashprofile`` or ``.zprofile`` file will fix this. 
+  - Use the `Existing conda install <https://mamba.readthedocs.io/en/latest/installation.html#existing-conda-install>`_ way, i.e. run ``conda install mamba -n base -c conda-forge`` whilst in the base environment. This way can take much longer time than the recommended way described above, and might not lead to a successful installation, especially if run on arm64 (Apple Silicon) OS X.
+
+Before installing ``omero-py``, we recommend to install the `Zeroc IcePy 3.6 <https://zeroc.com/ice/downloads/3.6>`_ Python bindings.
+
+Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/>`_ has produced several Python wheels to install the Ice-Python bindings depending on the desired Python version and the operating system.
+
+.. list-table::
+    :header-rows: 1
+    :align: left
+
+    * - OS
+      - Python version supported
+      - Ice-Python Binding
+    * - RHEL 8, RHEL 9, RockyLinux 9
+      - 3.8, 3.9, 3.10, 3.11 and 3.12
+      - `zeroc-ice-py-linux-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/tag/20240202>`_
+    * - Ubuntu 20.04, and Ubuntu 22.04
+      - 3.8, 3.9, 3.10, 3.11 and 3.12
+      - `zeroc-ice-py-linux-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/tag/20240202>`_
+    * - Windows
+      - 3.8, 3.9, 3.10 and 3.11
+      - `zeroc-ice-py-win-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-win-x86_64/releases/tag/20240325>`_
+    * - macOS 11.0 or later (``x86_64``)
+      - 3.8 and 3.9
+      - `zeroc-ice-py-macos-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-macos-x86_64/releases/tag/20231130>`_
+    * - macOS ``universal2``, ``x86_64`` and ``arm64``
+      - 3.10, 3.11 and 3.12
+      - `zeroc-ice-py-macos-universal2 <https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases>`_
+
+
+For example, to install ``omero-py`` using ``venv`` with Python 3.11 on Ubuntu 22.04:
 
 .. parsed-literal::
 
     $ python3 -m venv myenv
     $ . myenv/bin/activate
+    $ pip install https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/download/20240202/zeroc_ice-3.6.5-cp311-cp311-manylinux_2_28_x86_64.whl
     $ pip install omero-py==\ |version_py|
 
-To install ``omero-py`` using conda (preferred):
+To install ``omero-py`` using ``conda``. The Ice-Python bindings available from the ``conda-forge`` channel are only compatible with Python 3.9:
 
 .. parsed-literal::
 
-    conda create -n myenv -c conda-forge python=3.8 omero-py
+    conda create -n myenv python=3.9 conda-forge::zeroc-ice==3.6.5 omero-py
     conda activate myenv
 
 You can then start using the library in the terminal where the environment has been activated:
