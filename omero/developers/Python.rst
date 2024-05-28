@@ -18,10 +18,8 @@ Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/>`_ ha
     * - OS
       - Python version supported
       - Ice-Python Binding
-    * - RHEL 8, RHEL 9, RockyLinux 9
-      - 3.8, 3.9, 3.10, 3.11 and 3.12
-      - `zeroc-ice-py-linux-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/tag/20240202>`_
-    * - Ubuntu 20.04, and Ubuntu 22.04
+    * - | RHEL 8, RHEL 9, RockyLinux 9
+        | Ubuntu 20.04, and Ubuntu 22.04
       - 3.8, 3.9, 3.10, 3.11 and 3.12
       - `zeroc-ice-py-linux-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/tag/20240202>`_
     * - Windows
