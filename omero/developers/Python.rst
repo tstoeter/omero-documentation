@@ -6,24 +6,63 @@ libraries.
 
 From OMERO 5.6.0 release, the client library ``omero-py`` supports Python 3 and
 is now available on PyPI_ and Conda_. The ``omero-py`` API documentation is available at https://omero-py.readthedocs.io/.
-We recommend you use a Python virtual environment to install the client library. You can create one using either ``venv`` or ``conda`` (preferred).
-If you opt for Conda_, you will need
-to install it first, see `miniconda <https://docs.conda.io/en/latest/miniconda.html>`_ for more details.
+We recommend you use a Python virtual environment to install the client library. You can create one using either ``venv``, ``conda`` or ``mamba``.
+Before installing ``omero-py``, we recommend to install the `Zeroc IcePy 3.6 <https://zeroc.com/ice/downloads/3.6>`_ Python bindings.
 
-To install ``omero-py`` using venv:
+Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/blog/2023/12/08/ice-binaries-for-omero.html>`_ has produced several Python wheels to install the Ice-Python bindings depending on the desired Python version and the operating system. Please visit the linked pages to find the full URLs to the wheels that are used in the examples below.
+
+.. list-table::
+    :header-rows: 1
+    :align: left
+
+    * - OS
+      - Python version supported
+      - Ice-Python Binding
+    * - | RHEL 8, RHEL 9, RockyLinux 9
+        | Ubuntu 20.04, and Ubuntu 22.04
+      - 3.8, 3.9, 3.10, 3.11 and 3.12
+      - `zeroc-ice-py-linux-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/tag/20240202>`_
+    * - Windows
+      - 3.8, 3.9, 3.10, 3.11 and 3.12
+      - `zeroc-ice-py-win-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-win-x86_64/releases/tag/20240325>`_
+    * - macOS 11.0 or later (``x86_64``)
+      - 3.8 and 3.9
+      - `zeroc-ice-py-macos-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-macos-x86_64/releases/tag/20231130>`_
+    * - macOS ``x86_64`` and ``arm64``
+      - 3.10, 3.11 and 3.12
+      - `zeroc-ice-py-macos-universal2 <https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases/tag/20240131>`_
+
+
+.. note:: 
+   When installing the binaries, if an error like ``zeroc_ice-3.6.5-cp311-cp311-macosx_11_0_universal2.whl is not a supported wheel on this  platform`` occurs, this is probably due to the fact that your Python environment is not compatible with the platform
+   compatibility tags of the pre-built wheel. In that case, we recommend to install the Ice-Python bindings using the binaries from the ``conda-forge`` channel, see example
+   below.
+
+
+For example, to install ``omero-py`` using ``pip`` in a virtual environment created with Python 3.11 on Ubuntu 22.04:
 
 .. parsed-literal::
 
     $ python3 -m venv myenv
     $ . myenv/bin/activate
+    $ pip install https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/download/20240202/zeroc_ice-3.6.5-cp311-cp311-manylinux_2_28_x86_64.whl
     $ pip install omero-py==\ |version_py|
 
-To install ``omero-py`` using conda (preferred):
+To install ``omero-py`` using ``conda``. The Ice-Python bindings available from the ``conda-forge`` channel are only compatible with Python 3.9:
 
 .. parsed-literal::
 
-    conda create -n myenv -c conda-forge python=3.8 omero-py
-    conda activate myenv
+    $ conda create -n myenv python=3.9 conda-forge::zeroc-ice==3.6.5 omero-py
+    $ conda activate myenv
+
+To install ``omero-py`` using ``pip`` in a ``conda`` environment with Python 3.11 on Ubuntu 22.04:
+
+.. parsed-literal::
+
+    $ conda create -n myenv python=3.11
+    $ conda activate myenv
+    $ pip install https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/download/20240202/zeroc_ice-3.6.5-cp311-cp311-manylinux_2_28_x86_64.whl
+    $ pip install omero-py==\ |version_py|
 
 You can then start using the library in the terminal where the environment has been activated:
 
