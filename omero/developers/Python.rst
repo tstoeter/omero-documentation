@@ -35,7 +35,8 @@ Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/blog/2
 
 .. note:: 
    When installing the binaries, if an error like ``zeroc_ice-3.6.5-cp311-cp311-macosx_11_0_universal2.whl is not a supported wheel on this  platform`` occurs, this is probably due to the fact that your Python environment is not compatible with the platform
-   compatibility tags of the pre-built wheel. In that case, we recommend to install the Ice-Python bindings using the binaries from the ``conda-forge`` channel, see example
+   compatibility tags of the pre-built wheel. In that case, you may find that creating your environment with ``-c conda-forge`` gives a different set of tags that may help.
+   Otherwise, we recommend to install the Ice-Python bindings using the binaries from the ``conda-forge`` channel, see example
    below.
 
 
