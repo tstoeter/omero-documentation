@@ -33,12 +33,6 @@ Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/blog/2
       - `zeroc-ice-py-macos-universal2 <https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases/tag/20240131>`_
 
 
-.. note:: 
-   When installing the binaries, if an error like ``zeroc_ice-3.6.5-cp311-cp311-macosx_11_0_universal2.whl is not a supported wheel on this  platform`` occurs, this is probably due to the fact that your Python environment is not compatible with the platform
-   compatibility tags of the pre-built wheel. In that case, we recommend to install the Ice-Python bindings using the binaries from the ``conda-forge`` channel, see example
-   below.
-
-
 For example, to install ``omero-py`` using ``pip`` in a virtual environment created with Python 3.11 on Ubuntu 22.04:
 
 .. parsed-literal::
@@ -48,13 +42,6 @@ For example, to install ``omero-py`` using ``pip`` in a virtual environment crea
     $ pip install https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/download/20240202/zeroc_ice-3.6.5-cp311-cp311-manylinux_2_28_x86_64.whl
     $ pip install omero-py==\ |version_py|
 
-To install ``omero-py`` using ``conda``. The Ice-Python bindings available from the ``conda-forge`` channel are only compatible with Python 3.9:
-
-.. parsed-literal::
-
-    $ conda create -n myenv python=3.9 conda-forge::zeroc-ice==3.6.5 omero-py
-    $ conda activate myenv
-
 To install ``omero-py`` using ``pip`` in a ``conda`` environment with Python 3.11 on Ubuntu 22.04:
 
 .. parsed-literal::
@@ -63,6 +50,19 @@ To install ``omero-py`` using ``pip`` in a ``conda`` environment with Python 3.1
     $ conda activate myenv
     $ pip install https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/download/20240202/zeroc_ice-3.6.5-cp311-cp311-manylinux_2_28_x86_64.whl
     $ pip install omero-py==\ |version_py|
+
+.. note::
+   When installing the binaries, if an error like ``zeroc_ice-3.6.5-cp311-cp311-macosx_11_0_universal2.whl is not a supported wheel on this platform`` occurs, this is probably due to the fact that your Python environment is not compatible with the platform
+   compatibility tags of the pre-built wheel. In that case, you may find that creating a conda environment using the ``conda-forge`` channel i.e. ``-c conda-forge`` gives a different set of tags that may help.
+   Otherwise, we recommend to install the Ice-Python bindings using the binaries from the ``conda-forge`` channel, see example
+   below.
+
+To install ``omero-py`` using ``conda``. The Ice-Python bindings available from the ``conda-forge`` channel are only compatible with Python 3.9:
+
+.. parsed-literal::
+
+    $ conda create -n myenv python=3.9 conda-forge::zeroc-ice==3.6.5 omero-py
+    $ conda activate myenv
 
 You can then start using the library in the terminal where the environment has been activated:
 
