@@ -31,14 +31,7 @@ The make movie script currently uses the `mencoder <http://www.mplayerhq.hu/desi
 encode the movies, this command should be in the path of the
 computer (icegrid node) running the script.
 
-We have :snapshot:`Mac OSX installs for mencoder <mencoder/mac/>`
-which were originally provided
-`here <https://stefpause.com/apple/mac/mplayer-os-x-10rc1-and-mencoder-binaries/>`__.
-Unzip and put the mencoder in the PATH available to the server, e.g.
-:file:`/usr/local/bin/`. You may need to restart the server for this to take
-effect.
-
-There are also macports, rpms and debs for mencoder.
+There are macports, rpms and debs available for installing mencoder.
 
 Make movie also uses Pillow_ and `numpy <https://www.scipy.org/install.html>`_.
 
