@@ -48,7 +48,7 @@ Make movie command arguments
 A detailed list of the commands accepted by the script are:
 
 -  imageId: This id of the image to create the movie from
--  output: The name of the output file, sans the extension
+-  output: The name of the output file, without the extension
 -  zStart: The starting z-section to create the movie from
 -  zEnd: The final z-section
 -  tStart: The starting timepoint to create the movie
