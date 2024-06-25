@@ -12,7 +12,7 @@ having a number of options, including: selecting a range of Z,T planes, the
 channels to display, and more (see below). The movie can also show information
 overlayed on the image: z-section, scale bar and timing.
 
-The moie resulting from the script will automatically be uploaded to the server
+The movie resulting from the script will automatically be uploaded to the server
 and become a file attachment to the source image.
 
 Viewing the movie
