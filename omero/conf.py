@@ -374,6 +374,7 @@ def copy_legacy_redirects(app, exception):
         'sysadmins/unix/install-web/walkthrough/omeroweb-install-debian9-ice3.6.html',
         'sysadmins/unix/server-debian9-ice36.html',
         'sysadmins/unix/install-web/walkthrough/omeroweb-install-centos8-ice3.6.html',
+        'sysadmins/unix/server-centos7-ice36.html',
         'sysadmins/unix/server-centos8-ice36.html',
         'sysadmins/server-overview.html',
         'sysadmins/server-tables.html',

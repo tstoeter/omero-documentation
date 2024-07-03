@@ -26,10 +26,6 @@ Since 5.6, a new :envvar:`OMERODIR` variable is used, you should first unset :en
 
 **Supported:**
 
-:doc:`server-centos7-ice36`
-  Instructions for installing OMERO.server from scratch on
-  CentOS 7 with Ice 3.6 and Python 3.6.
-
 :doc:`server-ubuntu2004-ice36`
   Instructions for installing OMERO.server from scratch on
   Ubuntu 20.04 with Ice 3.6 and Python 3.8.
@@ -46,7 +42,6 @@ Since 5.6, a new :envvar:`OMERODIR` variable is used, you should first unset :en
     :titlesonly:
     :hidden:
 
-    server-centos7-ice36
     server-rockylinux9-ice36
     server-ubuntu2004-ice36
     server-ubuntu2204-ice36
