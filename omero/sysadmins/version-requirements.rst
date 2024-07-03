@@ -99,11 +99,11 @@ General overview for `RHEL
     * - `RHEL 7 <https://endoflife.date/rhel>`__
       - June 2014
       - June 2024
-      - |Deprecated|
+      - |Dropped|
     * - `CentOS 7 <https://endoflife.date/centos>`__
       - June 2014
       - June 2024
-      - |Deprecated|
+      - |Dropped|
     * - `RHEL 8 <https://endoflife.date/rhel>`__
       - May 2019
       - Dec 2029
