@@ -116,7 +116,7 @@ General overview for `RHEL
       - May 2022
       - May 2032
       - |Recommended|
-    * - `Rocky 9 <https://endoflife.date/rocky-linux>`__
+    * - `Rocky Linux 9 <https://endoflife.date/rocky-linux>`__
       - Jul 2022
       - May 2032
       - |Recommended|
@@ -191,7 +191,7 @@ Package lists
 
     * - Operating system
       - Details
-    * - Rocky 9
+    * - Rocky Linux 9
       - `Reference <https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/Packages/>`__
     * - Ubuntu
       - `Reference <https://packages.ubuntu.com/search?keywords=foo&searchon=names&suite=all&section=all>`__
