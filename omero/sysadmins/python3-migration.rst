@@ -20,20 +20,14 @@ Basic steps
 Choosing a platform
 -------------------
 
-The two recommended platforms, CentOS 7 and Ubuntu 18.04, have Python 3.6 as
-default installation and have therefore received the most testing which is why
-Python 3.6 is the preferred version of Python.
+The two recommended platforms, Rocky Linux/RHEL 9 and Ubuntu 22.04,
+have Python 3.9 and 3.10 respectively as
+default installation.
 
-Both Python 3.5 and 3.7 should work and are slated to have support added, but
-Python 3.6 has been the focus of testing during the migration.
+All Python 3.6+ versions should work.
 
-Similarly, other operating systems are slated for having support added, but help
-from the community would be very welcome! Obvious next candidates are CentOS 8
-and Ubuntu 20.04.
 
-Debian 9 is still on Python 3.5 and Debian 10 has moved to Ice 3.7.
-We have nonetheless an installation guide for Debian 9 with Python 3.5 and Ice 3.6
-but an installation guide for Debian 10 with Python 3.7 and Ice 3.6.
+Debian 10 has moved to Ice 3.7 but an installation guide for Debian 10 with Python 3.7 and Ice 3.6.
 
 Other prerequisites
 -------------------
@@ -44,8 +38,8 @@ the current choices are:
 
 - Ice 3.6 (non-optional)
 - Java 11
-- Nginx 1.14 or higher
-- PostgreSQL 11
+- Nginx 1.24 or higher
+- PostgreSQL 13+
 
 Other options
 -------------
