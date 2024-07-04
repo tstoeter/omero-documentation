@@ -24,10 +24,8 @@ The two recommended platforms, Rocky Linux/RHEL 9 and Ubuntu 22.04,
 have Python 3.9 and 3.10 respectively as
 default installation.
 
-All Python 3.6+ versions should work.
+All Python 3.8+ versions should work.
 
-
-Debian 10 has moved to Ice 3.7 but an installation guide for Debian 10 with Python 3.7 and Ice 3.6.
 
 Other prerequisites
 -------------------
