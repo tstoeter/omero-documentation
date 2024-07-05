@@ -991,6 +991,61 @@ LDAP server bind DN (if required; can be empty)
 Default: `[empty]`
 
 
+.. _log_configuration:
+
+Logging
+-------
+
+.. property:: omero.logging.directory
+
+omero.logging.directory
+^^^^^^^^^^^^^^^^^^^^^^^
+Relative server directory where the log files should be stored.
+
+Default: `var/log/`
+
+.. property:: omero.logging.level
+
+omero.logging.level
+^^^^^^^^^^^^^^^^^^^
+Specifies the threshold for the Python servers log files. Logging messages
+which are less severe than this value will be ignored. For a list of
+available values, see https://docs.python.org/3/library/logging.html#levels.
+
+Default: `20`
+
+.. property:: omero.logging.lognum
+
+omero.logging.lognum
+^^^^^^^^^^^^^^^^^^^^
+If omero.logging.timedlog is false or unset, specifies the
+number of old server log files that should be kept. Old log
+files will be saved by appending the extensions '.1', '.2' etc.
+
+Default: `9`
+
+.. property:: omero.logging.logsize
+
+omero.logging.logsize
+^^^^^^^^^^^^^^^^^^^^^
+If omero.logging.timedlog is false or unset, specifies the
+maximum size of the server log files in bytes above which a
+new log file should be created.
+
+Default: `5000000`
+
+.. property:: omero.logging.timedlog
+
+omero.logging.timedlog
+^^^^^^^^^^^^^^^^^^^^^^
+Whether the server log files should be rotated at a certain time
+interval. If true, log files will be rolled over at midnight.
+Otherwise, log files will be rolled over at a predetermined size,
+see omero.logging.logsize for more information.
+
+Default: `false`
+
+
 .. _mail_configuration:
 
 Mail
