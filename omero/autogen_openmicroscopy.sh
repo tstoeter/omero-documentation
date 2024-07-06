@@ -15,8 +15,8 @@ export DOCVENV=${DOCVENV:-$WORKSPACE/.venv3}
 
 $DOCVENV/bin/pip install "omero-web[redis]"
 
-echo "Generating configuration properties page"
-$DOCVENV/bin/omero config parse --rst | sed "s|$SUFFIX||" | sed "s|$WORKSPACE|/home/omero|" > omero/sysadmins/config.rst
+#echo "Generating configuration properties page"
+#$DOCVENV/bin/omero config parse --rst | sed "s|$SUFFIX||" | sed "s|$WORKSPACE|/home/omero|" > omero/sysadmins/config.rst
 
 echo "Generating ldap setdn usage page"
 mkdir -p omero/downloads/ldap
