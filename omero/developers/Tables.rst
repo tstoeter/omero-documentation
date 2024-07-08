@@ -199,7 +199,11 @@ Main methods
 
         .. note:: `start=0, stop=0` currently returns the first row instead
             of empty as would be expected using the normal Python range
-            semantics. This may change in future.
+            semantics. This may change in future. If you do not need the
+            row numbers that match your read returned in the
+            :class:`~omero.grid.Data` object you can set
+            `omero.tables.include_row_numbers` to `false` in the Ice
+            context passed when you make the call.
 
     .. method:: slice(colNumbers, rowNumbers)
 
@@ -213,6 +217,11 @@ Main methods
 
         :return: The requested columns and rows as a
             :class:`~omero.grid.Data` object.
+
+        .. note:: If you do not need the row numbers that match your read
+            returned in the :class:`~omero.grid.Data` object you can set
+            `omero.tables.include_row_numbers` to `false` in the Ice
+            context passed when you make the call.
 
     .. method:: getWhereList(condition, variables, start, stop, step)
 
