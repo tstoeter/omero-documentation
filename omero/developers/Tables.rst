@@ -190,6 +190,17 @@ Main methods
             `omero.tables.include_row_numbers` to `false` in the Ice
             context passed when you make the call.
 
+            For example:
+
+            ::
+
+                readCoordinates(
+                    [0],  # rowNumbers
+                    {
+                        "omero.tables.include_row_numbers": "false"
+                    }
+                )
+
     .. method:: read(colNumbers, start, stop)
 
         Read a subset of columns and consecutive rows from a table.
@@ -210,6 +221,19 @@ Main methods
             `omero.tables.include_row_numbers` to `false` in the Ice
             context passed when you make the call.
 
+            For example:
+
+            ::
+
+                read(
+                    [0],  # colNumbers
+                    0,  # start
+                    2,  # stop
+                    {
+                        "omero.tables.include_row_numbers": "false"
+                    }
+                )
+
     .. method:: slice(colNumbers, rowNumbers)
 
         Read a subset of columns and rows (may be non-consecutive) from a
@@ -227,6 +251,18 @@ Main methods
             returned in the :class:`~omero.grid.Data` object you can set
             `omero.tables.include_row_numbers` to `false` in the Ice
             context passed when you make the call.
+
+            For example:
+
+            ::
+
+                slice(
+                    [0],  # colNumbers
+                    [0, 1],  # rowNumbers
+                    {
+                        "omero.tables.include_row_numbers": "false"
+                    }
+                )
 
     .. method:: getWhereList(condition, variables, start, stop, step)
 
