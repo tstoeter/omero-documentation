@@ -185,6 +185,11 @@ Main methods
             the table.
         :return: The requested rows as a :class:`~omero.grid.Data` object.
 
+        .. note:: If you do not need the row numbers that match your read
+            returned in the :class:`~omero.grid.Data` object you can set
+            `omero.tables.include_row_numbers` to `false` in the Ice
+            context passed when you make the call.
+
     .. method:: read(colNumbers, start, stop)
 
         Read a subset of columns and consecutive rows from a table.
