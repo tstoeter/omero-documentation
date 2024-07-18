@@ -6,13 +6,13 @@ A short decription on how to create movies from OMERO.
 Creating a movie from OMERO
 ---------------------------
 
-OMERO provides a script to make Mpeg or Quicktime movies from any image
-in the server. These movies are created by a script called makemovie.py,
-this script has a number of options: these include: selecting a range of
-Z,T planes, the channels to display. The movie can also show information
-overlayed over the image: z-section, scale bar and timing.
+OMERO provides a script to make Mpeg or Quicktime movies from any image in the
+server. These movies are created by a script called :file:`Make_Movie.py`,
+having a number of options, including: selecting a range of Z,T planes, the
+channels to display, and more (see below). The movie can also show information
+overlayed on the image: z-section, scale bar and timing.
 
-The resulting movie will then be uploaded to the server by the script
+The movie resulting from the script will automatically be uploaded to the server
 and become a file attachment to the source image.
 
 Viewing the movie
@@ -31,14 +31,7 @@ The make movie script currently uses the `mencoder <http://www.mplayerhq.hu/desi
 encode the movies, this command should be in the path of the
 computer (icegrid node) running the script.
 
-We have :snapshot:`Mac OSX installs for mencoder <mencoder/mac/>`
-which were originally provided
-`here <https://stefpause.com/apple/mac/mplayer-os-x-10rc1-and-mencoder-binaries/>`__.
-Unzip and put the mencoder in the PATH available to the server, e.g.
-:file:`/usr/local/bin/`. You may need to restart the server for this to take
-effect.
-
-There are also macports, rpms and debs for mencoder.
+There are macports, rpms and debs available for installing mencoder.
 
 Make movie also uses Pillow_ and `numpy <https://www.scipy.org/install.html>`_.
 
@@ -48,7 +41,7 @@ Make movie command arguments
 A detailed list of the commands accepted by the script are:
 
 -  imageId: This id of the image to create the movie from
--  output: The name of the output file, sans the extension
+-  output: The name of the output file, without the extension
 -  zStart: The starting z-section to create the movie from
 -  zEnd: The final z-section
 -  tStart: The starting timepoint to create the movie
