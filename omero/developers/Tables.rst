@@ -185,6 +185,22 @@ Main methods
             the table.
         :return: The requested rows as a :class:`~omero.grid.Data` object.
 
+        .. note:: If you do not need the row numbers that match your read
+            returned in the :class:`~omero.grid.Data` object you can set
+            `omero.tables.include_row_numbers` to `false` in the Ice
+            context passed when you make the call.
+
+            For example:
+
+            ::
+
+                readCoordinates(
+                    [0],  # rowNumbers
+                    {
+                        "omero.tables.include_row_numbers": "false"
+                    }
+                )
+
     .. method:: read(colNumbers, start, stop)
 
         Read a subset of columns and consecutive rows from a table.
@@ -199,7 +215,24 @@ Main methods
 
         .. note:: `start=0, stop=0` currently returns the first row instead
             of empty as would be expected using the normal Python range
-            semantics. This may change in future.
+            semantics. This may change in future. If you do not need the
+            row numbers that match your read returned in the
+            :class:`~omero.grid.Data` object you can set
+            `omero.tables.include_row_numbers` to `false` in the Ice
+            context passed when you make the call.
+
+            For example:
+
+            ::
+
+                read(
+                    [0],  # colNumbers
+                    0,  # start
+                    2,  # stop
+                    {
+                        "omero.tables.include_row_numbers": "false"
+                    }
+                )
 
     .. method:: slice(colNumbers, rowNumbers)
 
@@ -213,6 +246,23 @@ Main methods
 
         :return: The requested columns and rows as a
             :class:`~omero.grid.Data` object.
+
+        .. note:: If you do not need the row numbers that match your read
+            returned in the :class:`~omero.grid.Data` object you can set
+            `omero.tables.include_row_numbers` to `false` in the Ice
+            context passed when you make the call.
+
+            For example:
+
+            ::
+
+                slice(
+                    [0],  # colNumbers
+                    [0, 1],  # rowNumbers
+                    {
+                        "omero.tables.include_row_numbers": "false"
+                    }
+                )
 
     .. method:: getWhereList(condition, variables, start, stop, step)
 
