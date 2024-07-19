@@ -9,29 +9,8 @@ is now available on PyPI_ and Conda_. The ``omero-py`` API documentation is avai
 We recommend you use a Python virtual environment to install the client library. You can create one using either ``venv``, ``conda`` or ``mamba``.
 Before installing ``omero-py``, we recommend to install the `Zeroc IcePy 3.6 <https://zeroc.com/ice/downloads/3.6>`_ Python bindings.
 
-Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/blog/2023/12/08/ice-binaries-for-omero.html>`_ has produced several Python wheels to install the Ice-Python bindings depending on the desired Python version and the operating system. Please visit the linked pages to find the full URLs to the wheels that are used in the examples below.
-
-.. list-table::
-    :header-rows: 1
-    :align: left
-
-    * - OS
-      - Python version supported
-      - Ice-Python Binding
-    * - | RHEL 8, RHEL 9, RockyLinux 9
-        | Ubuntu 20.04, and Ubuntu 22.04
-      - 3.8, 3.9, 3.10, 3.11 and 3.12
-      - `zeroc-ice-py-linux-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/tag/20240202>`_
-    * - Windows
-      - 3.8, 3.9, 3.10, 3.11 and 3.12
-      - `zeroc-ice-py-win-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-win-x86_64/releases/tag/20240325>`_
-    * - macOS 11.0 or later (``x86_64``)
-      - 3.8 and 3.9
-      - `zeroc-ice-py-macos-x86_64 <https://github.com/glencoesoftware/zeroc-ice-py-macos-x86_64/releases/tag/20231130>`_
-    * - macOS ``x86_64`` and ``arm64``
-      - 3.10, 3.11 and 3.12
-      - `zeroc-ice-py-macos-universal2 <https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases/tag/20240131>`_
-
+Our commercial partner `Glencoe Software <https://www.glencoesoftware.com/blog/2023/12/08/ice-binaries-for-omero.html>`_ has produced several Python wheels to install the Ice-Python bindings depending on the desired Python version and the operating system. Please visit the `ice binaries for omero <https://www.glencoesoftware.com/blog/2023/12/08/ice-binaries-for-omero.html>`_ page to find the full URLs to the wheels that are used in the examples below.
+ 
 
 For example, to install ``omero-py`` using ``pip`` in a virtual environment created with Python 3.11 on Ubuntu 22.04:
 
