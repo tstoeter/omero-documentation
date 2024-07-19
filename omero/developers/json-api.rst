@@ -319,6 +319,10 @@ cookie of any request or from the following URL:
       "data": "eNoVq528bOqlhQqbCzKuviODTRX3PUO2"
     }
 
+If you are using the API over HTTPS, you will also need to set the ``Referer`` key in 
+request headers when supplying the CSRF token to other endpoints. The referer URI 
+needs to be an address on the same domain as the server for the token to be accepted.
+
 
 Login
 ^^^^^
