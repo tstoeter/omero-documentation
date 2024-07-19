@@ -357,6 +357,7 @@ linkcheck_ignore += [
     r'https://wiki.centos.org/.*',
     r'https://royalsocietypublishing.org/.*',
     r'https://trac.openmicroscopy.org*',
+    r'https://java.com/.*',
 ]
 
 exclude_patterns = ['sysadmins/unix/walkthrough/requirements*',
