@@ -3,8 +3,8 @@ OMERO.web upgrade
 
 The OME team is committed to providing frequent, project-wide upgrades with
 security fixes, bug fixes and new functionality. We try to make the schedule for
-these releases as public as possible. You may want to take a look at the `Trello
-boards <https://trello.com/b/4EXb35xQ/getting-started>`_ for exactly what will
+these releases as public as possible. You may want to take a look at the `GitHub milestones
+boards <https://github.com/ome/omero-web/milestones>`_ for exactly what will
 go into a release. See also :doc:`server-upgrade`.
 
 See the full details of OMERO |version_openmicroscopy| features in the :doc:`/users/history`.
