@@ -25,6 +25,9 @@ the level of detail; upgrading should be a straightforward process.
     may be required beyond simply running the SQL upgrade scripts
     described below.
 
+.. warning::
+    Upgrading to OMERO 5.6.12 or higher requires an upgrade to OMERO.py 5.19.4 or higher
+
 Upgrade checklist
 -----------------
 
