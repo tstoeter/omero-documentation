@@ -32,6 +32,37 @@ omero clients:
 OMERO version history
 =====================
 
+5.6.12 (July 2024)
+------------------
+
+This release includes the following upgrade of the OMERO.server Java components:
+
+- omero-gateway-java 5.9.2
+- omero-blitz 5.7.3
+- omero-server 5.6.12
+- omero-renderer 5.5.17
+- omero-romio 5.7.7
+- omero-common 5.6.7
+- omero-model 5.6.15
+
+
+Improvements include:
+
+- Handle archive status being populated. Related to https://github.com/ome/omero-web/pull/555
+- Add more tests using the Tables service
+- an upgrade of Bio-Formats to version 7.3.1
+- an update of IceGrid templates to make OMERO.tables more configurable. 
+
+**Note:** This upgrade will require an upgrade of OMERO.py to 5.19.4 to ensure that
+the Tables service starts as expected. If OMERO.py is not upgraded, the Tables service will
+be marked as inactive.
+
+
+This version of the OMERO.server has been tested with:
+
+- OMERO.py 5.19.4
+- OMERO.web 5.27.0
+
 5.6.11 (May 2024)
 -----------------
 
