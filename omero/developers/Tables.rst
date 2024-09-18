@@ -241,10 +241,10 @@ Main methods
 
         :param long[] colNumbers: A list of column indices to be retrieved.
             The results will be returned in the same order as these indices.
-            If empty or None, all columns will be returned.
+            If empty or null, all columns will be returned.
         :param long[] rowNumbers: A list of row indices to be retrieved.
             The results will be returned in the same order as these indices.
-            If empty or None, all rows will be returned.
+            If empty or null, all rows will be returned.
 
         :return: The requested columns and rows as a
             :class:`~omero.grid.Data` object.
