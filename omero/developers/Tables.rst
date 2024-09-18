@@ -205,7 +205,7 @@ Main methods
 
         Read a subset of columns and consecutive rows from a table.
 
-        :param long[] colNumber: A list of column indices to be retrieved
+        :param long[] colNumbers: A list of column indices to be retrieved
             from the table (may be non-consecutive).
         :param long start: The index of the first row to retrieve.
         :param long stop: The index of the `last+1` row to retrieve (uses
