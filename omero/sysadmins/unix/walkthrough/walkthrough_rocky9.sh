@@ -6,7 +6,7 @@ set -e -u -x
 dnf -y install java-11-openjdk
 
 # install dependencies
-dnf -y install python unzip bzip2 wget bc openssl
+dnf -y install python3 unzip bzip2 wget bc openssl
 #end-step01
 # install Ice
 #start-recommended-ice
