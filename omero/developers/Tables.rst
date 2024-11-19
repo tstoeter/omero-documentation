@@ -205,7 +205,7 @@ Main methods
 
         Read a subset of columns and consecutive rows from a table.
 
-        :param long[] colNumber: A list of column indices to be retrieved
+        :param long[] colNumbers: A list of column indices to be retrieved
             from the table (may be non-consecutive).
         :param long start: The index of the first row to retrieve.
         :param long stop: The index of the `last+1` row to retrieve (uses
@@ -241,8 +241,10 @@ Main methods
 
         :param long[] colNumbers: A list of column indices to be retrieved.
             The results will be returned in the same order as these indices.
+            If empty or null, all columns will be returned.
         :param long[] rowNumbers: A list of row indices to be retrieved.
             The results will be returned in the same order as these indices.
+            If empty or null, all rows will be returned.
 
         :return: The requested columns and rows as a
             :class:`~omero.grid.Data` object.
