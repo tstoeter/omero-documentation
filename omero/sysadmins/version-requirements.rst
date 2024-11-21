@@ -413,7 +413,7 @@ OMERO support policies
     * - 8
       - Mar 2014
       - Nov 2026
-      - |Supported|
+      - |Deprecated|
       - `Reference <https://access.redhat.com/articles/1299013>`__
     * - 11
       - Sep 2018
