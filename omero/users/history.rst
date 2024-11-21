@@ -32,6 +32,35 @@ omero clients:
 OMERO version history
 =====================
 
+
+5.6.14 (November 2024)
+----------------------
+
+This release includes the following upgrade of the OMERO.server Java components:
+
+- omero-gateway-java 5.10.0
+- omero-blitz 5.8.0
+- omero-server 5.7.0
+- omero-renderer 5.6.0
+- omero-romio 5.7.0
+- omero-common 5.7.0
+- omero-model 5.7.0
+
+The Java components listed above have been built via Java 11 with the compatibility flag on for Java 8.
+Due to limited testing on Java 8, we recommend to upgrade to Java 11 or higher.
+
+Improvements include:
+
+- Add new lookup tables. See https://github.com/ome/openmicroscopy/pull/6398.
+- Ugrade of Bio-Formats to version 8.0.1.
+- Bump slf4j dependencies. See https://github.com/ome/openmicroscopy/pull/6409.
+
+
+This version of the OMERO.server has been tested with:
+
+- OMERO.py 5.19.5
+- OMERO.web 5.28.0
+
 5.6.13 (August 2024)
 --------------------
 
