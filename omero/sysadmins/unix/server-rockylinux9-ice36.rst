@@ -56,7 +56,7 @@ To install PostgreSQL 15:
     :end-before: #end-step01
 
 .. Note:: if you are installing PostgreSQL in a Docker container, some of the commands above will not work. For more details check `step01_rocky9_deps.sh 
- <hhttps://github.com/ome/omero-install/blob/develop/linux/step01_rocky9_deps.sh>`_
+ <https://github.com/ome/omero-install/blob/develop/linux/step01_rocky9_deps.sh>`_
 
 Create a local omero-server system user, and a directory for the OMERO repository:
 
