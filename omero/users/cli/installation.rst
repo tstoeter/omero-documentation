@@ -5,7 +5,7 @@ Installation
     but may be supported in the future.
 
 Since OMERO 5.6, only Python 3 is supported.
-We assume that you have already installed Python 3.6 or higher. You can ensure that your python executable is correct with the ``python --version`` command.
+We assume that you have already installed Python 3.9 or higher. You can ensure that your python executable is correct with the ``python --version`` command.
 
 We recommend installing client library ``omero-py`` and the |CLI| plugins
 in a Python virtual environment.
