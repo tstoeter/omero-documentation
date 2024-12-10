@@ -24,14 +24,14 @@ To install omero-py using pip in a conda environment with Python 3.11 on Ubuntu 
     conda create -n myenv python=3.11
     conda activate myenv
     pip install https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/download/20240202/zeroc_ice-3.6.5-cp311-cp311-manylinux_2_28_x86_64.whl
-    pip install omero-py==5.19.5
+    pip install omero-py
 
 Alternatively install ``omero-py`` using venv with Python 3.9 or higher::
 
     python -m venv myenv
     . myenv/bin/activate
     pip install https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/download/20240202/zeroc_ice-3.6.5-cp311-cp311-manylinux_2_28_x86_64.whl
-    pip install omero-py==5.19.5
+    pip install omero-py
 
 
 
