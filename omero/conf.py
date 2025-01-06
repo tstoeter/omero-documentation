@@ -358,6 +358,8 @@ linkcheck_ignore += [
     r'https://royalsocietypublishing.org/.*',
     r'https://trac.openmicroscopy.org*',
     r'https://java.com/.*',
+    r'https://www.cpubenchmark.net/*',
+    r'https://www.mathworks.com/.*',
 ]
 
 exclude_patterns = ['sysadmins/unix/walkthrough/requirements*',
