@@ -140,7 +140,6 @@ project and like :ref:`backup-and-restore_postgresql` above, provide a
 backup script which can be placed in ``/etc/cron.daily`` to perform
 daily ``/OMERO`` backups::
 
-    #!sh
     #!/bin/bash
 
     FROM=/OMERO
@@ -151,7 +150,6 @@ daily ``/OMERO`` backups::
 ``rdiff-backup`` can also be used to backup ``/OMERO`` to a remote
 machine::
 
-    #!sh
     #!/bin/bash
 
     FROM=/OMERO
